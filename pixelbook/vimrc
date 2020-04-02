@@ -1,0 +1,34 @@
+" Setting defaults
+set number
+set hls
+set tabstop=4 shiftwidth=4 expandtab
+
+" Install plugins with vim-plug
+call plug#begin('~/.vim/plugged')
+
+Plug 'tpope/vim-fugitive'
+Plug 'idanarye/vim-merginal'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/syntastic'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'yggdroot/indentline'
+Plug 'jiangmiao/auto-pairs'
+Plug 'joshdick/onedark.vim'
+Plug 'dracula/vim', { 'as': 'dracula'  }
+Plug 'ap/vim-css-color'
+
+call plug#end()
+
+" Modify plugin defaults
+colorscheme dracula
+nmap <C-t> :NERDTreeToggle<CR>
+nmap <C-b> :MerginalToggle<CR>
+" Statusline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+if !exists('g:airline_symbols')
+	let g:airline_symbols = {}
+endif
+let g:airline_symbols.space = "\ua0"
+  
