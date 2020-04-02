@@ -17,6 +17,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'joshdick/onedark.vim'
 Plug 'dracula/vim', { 'as': 'dracula'  }
 Plug 'ap/vim-css-color'
+Plug 'valloric/youcompleteme'
 
 call plug#end()
 
