@@ -18,11 +18,14 @@ Plug 'joshdick/onedark.vim'
 Plug 'dracula/vim', { 'as': 'dracula'  }
 Plug 'ap/vim-css-color'
 Plug 'valloric/youcompleteme'
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
-" Modify plugin defaults
+" Modify Vim Color Layout
 colorscheme dracula
+hi Normal guibg=NONE ctermbg=NONE
+" Key Mappings
 nmap <C-t> :NERDTreeToggle<CR>
 nmap <C-b> :MerginalToggle<CR>
 " Statusline
